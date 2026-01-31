@@ -2,75 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Great & Powerful maps</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f5f5f5;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    p {
-      max-width: 700px;
-      margin-bottom: 20px;
-      color: #444;
-      line-height: 1.5;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .buttons a button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      border: none;
-      border-radius: 4px;
-      background-color: #007acc;
-      color: white;
-    }
-
-    .buttons a button:hover {
-      background-color: #005fa3;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+  <!-- the container keeps the content centered -->
+  <div class="container">
+    <h1>Great & Powerful maps</h1>
 
-  <h1>Great & Powerful maps</h1>
+    <div class="buttons">
+      <a href="overworld/index.html"><button>Overworld</button></a>
+      <a href="overworld-highlights/index.html"><button>Overworld with highlights</button></a>
+      <a href="nether-high/index.html"><button>Nether high</button></a>
+      <a href="nether-low/index.html"><button>Nether low</button></a>
+      <a href="end/index.html"><button>End</button></a>
+    </div>
 
-  <div class="buttons">
-    <a href="overworld/index.html"><button>Overworld</button></a>
-    <a href="overworld-highlights/index.html"><button>Overworld with highlights</button></a>
-    <a href="nether-high/index.html"><button>Nether high</button></a>
-    <a href="nether-low/index.html"><button>Nether low</button></a>
-    <a href="end/index.html"><button>End</button></a>
+    <p>
+      <h2>Map info:</h2>
+      <strong>Nether high</strong> is an x-ray of the Nether at the top bedrock. You can see the ice roads in this map, but caves in the ceiling block most everything else.
+      <br>
+      <strong>Nether low</strong> is an x-ray of the Nether at y=61. You can see most of the body of the nether, but not the ice roads.
+      <br><br>
+      <strong>Overworld with highlights</strong> is a view of the overworld with the foliage removed, saturation reduced, and select blocks highlighted. The blocks chosen are blocks that should be very rare in the wild, but very common in builds/bases. Highlights are given below:
+    </p>
+
+    <!-- bullet points -->
+    <ul>
+      <li>Red -> beacon</li>
+      <li>Purple -> nether portal</li>
+      <li>Blue -> ender chest</li>
+      <li>Brown -> crafting table</li>
+    </ul>
+
   </div>
-
-  <p>
-    Map info:
-    <br><br>
-    <strong>Nether high</strong> is an x-ray of the Nether at the top bedrock. You can see the ice roads in this map, but caves in the ceiling block most everything else.
-    <br>
-    <strong>Nether low</strong> is an x-ray of the Nether at y=61. You can see most of the body of the nether, but not the ice roads.
-    <br><br>
-    <strong>Overworld with highlights</strong> is a view of the overworld with the foliage removed, saturation reduced, and select blocks highlighted. The blocks chosen are blocks that should be very rare in the wild, but very common in builds/bases. Highlights are given below:
-    <br>
-    <span style="margin-left: 40px;">Red -> beacon
-    <br>
-    <span style="margin-left: 40px;">Purple -> nether portal
-    <br>
-    <span style="margin-left: 40px;">Blue -> ender chest
-    <br>
-    <span style="margin-left: 40px;">Brown -> crafting table
-  </p>
-
 </body>
 </html>
